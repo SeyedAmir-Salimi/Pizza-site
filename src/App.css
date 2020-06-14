@@ -670,7 +670,8 @@ h6 {
 }
 
 .featured-rooms-center {
-  padding-top: 17rem;
+  /* padding-top: 17rem; */
+  padding-top: 1rem;
   width: 80vw;
   margin: 0 auto;
   display: grid;
@@ -704,6 +705,7 @@ h6 {
 }
 
 /* Slide Show */
+
 .IoMdPizza-span {
   display: flex;
   justify-content: center;
@@ -1203,6 +1205,7 @@ h6 {
   .filter-form {
     width: 70vw;
   }
+
 }
 
 @media screen and (min-width: 992px) {

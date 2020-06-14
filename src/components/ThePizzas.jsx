@@ -74,7 +74,7 @@ export default class ThePizzas extends Component {
           </Banner>
         </Hero>
         <section className="featured-rooms">
-          <SlideShow />
+          {/* <SlideShow /> */}
           <div className="featured-rooms-center">
             {this.state.value === "All pizzas" || this.state.value === undefined
               ? pizzas

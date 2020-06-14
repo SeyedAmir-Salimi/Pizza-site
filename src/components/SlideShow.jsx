@@ -109,7 +109,7 @@ class SlideShow extends Component {
 
     render() {
         return (
-            <div>
+            <div className="slideshowDiv">
                 <span className="IoMdPizza-span">
                     {/* <p>{this.state.spiner.opacity ? "true" : "false"}</p> */}
                     <p onClick={() => { this.prevHandle(); }}><MdSkipPrevious /></p>
