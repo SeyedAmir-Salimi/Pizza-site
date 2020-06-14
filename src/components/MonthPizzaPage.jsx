@@ -53,7 +53,7 @@ class MonthPizzaPage extends Component {
                         <Link to={`/ThePizzas/${slug}`} className="btn-primary room-link">{name}</Link>
                     </div>
                 </div>
-                <UpUp/>
+                {/* <UpUp/> */}
             </article>
         );
     }

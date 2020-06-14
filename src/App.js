@@ -12,7 +12,7 @@ import Banner from './components/Banner'
 import Services from './components/Services.jsx';
 import MonthPizza from './components/MonthPizza';
 import UpUp from './components/UpUp'
-
+import Aboutus from './components/AboutUs'
 
 class App extends Component {
   constructor(props) {
@@ -38,13 +38,14 @@ class App extends Component {
               </Hero>
               <Services />
               <MonthPizza />
-              <UpUp />
+              {/* <UpUp /> */}
             </div>
           </Route>
 
           <Route exact path="/ThePizzas" component={ThePizzas} />
           <Route exact path="/ThePizzas/:slug" component={SinglPizza} />
           <Route exact path="/MyCart" component={MyCart} />
+          <Route exact path="/AboutUS" component={Aboutus} />
           <Route component={Error} />
         </Switch>
 

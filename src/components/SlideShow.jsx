@@ -124,10 +124,10 @@ class SlideShow extends Component {
                     <p onClick={() => { this.setState({ left: 675.1999999999999 }) }} style={{ opacity: this.state.left > 675 && this.state.left < 759 ? "1" : "0.3" }}><IoMdPizza /></p>
                     <p onClick={() => { this.setState({ left: 759.5999999999999 }) }} style={{ opacity: this.state.left > 759 && this.state.left < 843 ? "1" : "0.3" }}><IoMdPizza /></p>
                     <p onClick={() => { this.setState({ left: 843.999999999999 }) }} style={{ opacity: this.state.left > 843 && this.state.left < 927 ? "1" : "0.3" }}><IoMdPizza /></p>
-                    <p onClick={() => { this.nextHandle(); this.SpinerHandleNext(); this.SpinerHandleNextTimeout() }}><MdSkipNext /></p>
+                    <p onClick={() => { this.nextHandle()}}><MdSkipNext /></p>
                 </span>
                 <div className="SlideShow" onClick={this.Lefthandler}>
-                    {this.state.spiner.opacity ? <p className="Spiner" style={{ left: this.state.spiner.spinerLeft + "rem", transform: this.state.spiner.scaleX }}><GiPizzaCutter/></p> : ""}
+                    {/* {this.state.spiner.opacity ? <p className="Spiner" style={{ left: this.state.spiner.spinerLeft + "rem", transform: this.state.spiner.scaleX }}><GiPizzaCutter/></p> : ""} */}
                     {this.context.pizzas.map(pizza =>
                         <div key={pizza.id} className="SlideShow-Down" style={{ left: -this.state.left + "rem", opacity: this.state.opacity, transition: this.state.transition }}>
                             <div onClick={this.TimeOutHandler}>

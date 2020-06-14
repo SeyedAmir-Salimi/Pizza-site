@@ -348,6 +348,7 @@ h6 {
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  margin: 0.3rem 1rem;
 }
 
 .btn-primary:hover {
@@ -455,7 +456,7 @@ h6 {
 
 .show-nav {
   display: inline-block;
-  height: 9rem;
+  height: 13rem;
 
 }
 
@@ -501,6 +502,13 @@ h6 {
   background-image: url("./images/defaultBcg2.jpg");
   min-height: 60vh;
 }
+.HeroGray {
+  min-height: calc(100vh - 66px);
+  background: url("./images/defaultBcgGray.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* End of Hero */
 /* Banner */
@@ -512,6 +520,7 @@ h6 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  width: 100%;
 }
 
 .banner h1 {
@@ -528,6 +537,37 @@ h6 {
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+/* AboutUS */
+.AboutUS {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--mainWhite);
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  width: 70%;
+  margin-top: 3rem;
+}
+
+.AboutUS h1 {
+  font-size: 2.5rem;
+}
+
+.AboutUS div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+
+.AboutUS p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: var(--primaryColor);
 }
 
 @media screen and (min-width: 576px) {
