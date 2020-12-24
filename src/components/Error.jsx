@@ -1,11 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Hero from './Hero'
 import NavPizz from './NavPizz'
 import Banner from './Banner'
 
 export default function Error(props) {
-    console.log(props);
     return (
         <div>
             <NavPizz />

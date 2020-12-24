@@ -77,7 +77,9 @@ class PizzeProvider extends Component {
     const index = tempPizza.indexOf(this.getItem(id));
     const pizza = tempPizza[index];
     pizza.inCarta = true;
-    this.state.cart = this.state.cart + 1;
+    this.setState({
+      cart: this.state.cart+1
+  })
     pizza.count = 1;
     const price = pizza.price;
     pizza.total = price * pizza.count;
@@ -128,7 +130,9 @@ class PizzeProvider extends Component {
     const index = tempPizza.indexOf(this.getItem(id));
     const pizza = tempPizza[index];
     pizza.inCarta = false;
-    this.state.cart = this.state.cart - 1;
+    this.setState({
+      cart: this.state.cart -1
+  })
     pizza.count = 0;
     this.setState(
       () => {

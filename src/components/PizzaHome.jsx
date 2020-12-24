@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import NavPizz from "./NavPizz";
 import Hero from "./Hero";
 import Banner from "./Banner";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Services from "./Services.jsx";
 import MonthPizza from "./MonthPizza";
-import UpUp from "./UpUp";
+
 
 class PizzaHome extends Component {
   constructor(props) {

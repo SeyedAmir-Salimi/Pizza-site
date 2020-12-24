@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PizzeContext, PizzeConsumer } from '../Contex';
+import { PizzeContext } from '../Contex';
 import AlertRemove from './AlertRemove';
 import paypal from '../Pizza/paypal.png'
 
@@ -12,7 +12,8 @@ class CartTotal extends Component {
         }
     }
     static contextType = PizzeContext;
-    render() {
+
+      render() {
         const { cartSubtotal, cartTax, CartTotal, clearAll } = this.context;
         let Number = 0;
         let colorNum = "";
@@ -33,7 +34,7 @@ class CartTotal extends Component {
                 <h5>Subtotal: €{cartSubtotal}</h5><br />
                 <h5 className="colorNum"><h5 style={{ color: colorNum }}>{Number}</h5> Tax: €{cartTax}</h5>
                 <h4 >Total Price: €{CartTotal}</h4>
-                <img src={paypal} alt="paypal" onClick={()=> {this.setState({paypal:true}) ; setTimeout(()=> {this.setState({paypal:false}); { clearAll() }},3000); }}/>
+                <img src={paypal} alt="paypal" onClick={()=> {this.setState({paypal:true}) ; setTimeout(()=> {this.setState({paypal:false}); clearAll() },3000); }}/>
                 {this.state.paypal ?
                     <span className="alert">
                         <span className="alert-Green">

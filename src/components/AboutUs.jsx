@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { FaAlignRight } from "react-icons/fa";
-import { GiBandit, GiShoppingCart } from "react-icons/gi";
-import { PizzeContext } from "./Contex";
 import NavPizz from "./NavPizz";
 import Hero from "./Hero";
-import Banner from "./Banner";
 import LogoWhite from '../images/LogoWhite.svg'
 
 class AboutUs extends Component {

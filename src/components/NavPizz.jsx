@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import { GiBandit, GiShoppingCart } from "react-icons/gi";
 import { PizzeContext, PizzeConsumer } from "./Contex";
 import LogoBlack from '../images/LogoBlack.png'
 
@@ -22,7 +21,6 @@ class NavPizz extends Component {
         <nav className="navbar">
           <div className="nav-center">
             <div className="nav-header">
-              {/* <GiBandit className="GiBandit" style={{ fontSize: 100 }} /> */}
               <img src={LogoBlack} alt="LogoBlack" style={{ width: "5rem" }} />
               <button className="nav-btn" onClick={this.ToggleHandl}>
                 <FaAlignRight

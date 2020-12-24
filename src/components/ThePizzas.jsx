@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { PizzeContext } from "./Contex";
-import Loading from "./Loading";
+
 import MonthPizzaPage from "./MonthPizzaPage";
 import NavPizz from "./NavPizz";
 import Hero from "./Hero";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import Banner from "./Banner";
-import SlideShow from "./SlideShow";
-import SlideShow2 from "./SildeShow2";
+
 
 export default class ThePizzas extends Component {
   constructor(props) {
@@ -24,9 +23,7 @@ export default class ThePizzas extends Component {
   };
   static contextType = PizzeContext;
   render() {
-    console.log(this.context);
     let {
-      loading,
       MonthPizza: pizzas,
       Funghi,
       Prosciutto,

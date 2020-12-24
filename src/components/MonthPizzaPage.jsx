@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GiShoppingCart } from "react-icons/gi";
 import { PizzeContext } from './Contex';
 import Alert from './Cart/Alert';
-import UpUp from './UpUp';
 
 class MonthPizzaPage extends Component {
     constructor(props) {

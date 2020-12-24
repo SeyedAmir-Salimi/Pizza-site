@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import NavPizz from '../NavPizz'
 import { PizzeContext, PizzeConsumer } from '../Contex';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import { IoIosTrash, IoIosArrowDropupCircle, IoIosArrowDropdownCircle } from "react-icons/io";
-import Hero from './../Hero'
 import Banner from './../Banner'
 import { StyledHero } from '../StyledHero'
 import CartBack from '../Pizza/cart-fun-art.jpg'

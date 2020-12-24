@@ -1,5 +1,5 @@
 import React from 'react'
-import {GiBandit} from 'react-icons/gi';
+
 import LogoWhite from '../images/LogoWhite.svg'
 
 export default function Banner({children,heroProp,titel,subtitel}) {

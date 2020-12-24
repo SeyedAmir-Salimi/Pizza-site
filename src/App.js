@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../src/App.css'
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
-import PizzaHome from './components/PizzaHome'
+import { Switch, Route, Link } from "react-router-dom";
 import SinglPizza from './components/SinglPizza'
 import ThePizzas from './components/ThePizzas'
 import Error from './components/Error'
@@ -11,7 +10,7 @@ import Hero from './components/Hero'
 import Banner from './components/Banner'
 import Services from './components/Services.jsx';
 import MonthPizza from './components/MonthPizza';
-import UpUp from './components/UpUp'
+// import UpUp from './components/UpUp'
 import Aboutus from './components/AboutUs'
 
 class App extends Component {
@@ -22,12 +21,11 @@ class App extends Component {
     }
 
   }
-  // FireBase //
-
 
 
   render() {
     return (
+
       <div className="App">
         <Switch>
           <Route exact path="/">
@@ -48,8 +46,9 @@ class App extends Component {
           <Route exact path="/AboutUS" component={Aboutus} />
           <Route component={Error} />
         </Switch>
+      </div>
 
-      </div >
+
     );
   }
 }

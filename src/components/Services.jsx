@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FaPizzaSlice, FaBeer, FaMoneyBillAlt, FaWineGlassAlt } from 'react-icons/fa';
-import SlideShow from './SlideShow'
+
 
 class Services extends Component {
     state = {
